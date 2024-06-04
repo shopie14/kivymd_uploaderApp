@@ -1,12 +1,13 @@
 from kivymd.tools.hotreload.app import MDApp
-
+from kivy.core.text import LabelBase
+from kivy.uix.screenmanager import ScreenManager
 from kivy.factory import Factory
 from kivy.core.window import Window
 
-Window.size = (450, 550)
+Window.size = (350, 580)
 
 
-class LoginApp(MDApp):
+class Slope(MDApp):
     # config your settings
     
     DEBUG = True
@@ -17,11 +18,11 @@ class LoginApp(MDApp):
     CLASSES = {"MainApp": "main"}
 
     def build_app(self, first=False):
-        # Configuer your app setting here
-
+        
+        
         # called your entry-point class.
         return Factory.MainApp()
 
 
 if __name__ == "__main__":
-    LoginApp().run()
+    Slope().run()

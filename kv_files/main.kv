@@ -5,16 +5,49 @@
     MDScreen:
         md_bg_color: self.theme_cls.secondaryContainerColor
 
-        Image:
-            source: "assets/logo.png"
-            size_hint_x: 0.5
-            allow_stretch: True
-            pos_hint: {'center_x': 0.50,'center_y': 0.78}  
+        MDFloatLayout:
+            Image:
+                source: "assets/logo.png"
+                size_hint_x: 0.60
+                allow_stretch: True
+                pos_hint: {'center_x': 0.50,'center_y': 0.68}  
 
-
-        MDLabel:
+            # Title
+            MDLabel:
+                text: "MONJA UPLOADER"
+                font_name: 'BPoppins'
+                font_size: "32sp"
+                pos_hint: {'center_x': 0.50, 'center_y': 0.37}
+                halign: "center"
+                role: "large"
+                bold: True
             
-            text: "Monja Uploader"
-            font_name: 'BPoppins'
-            font_size: "50sp"
+            # Login Button
+            MDButton:
+                size_hint: .66, .065
+                style: "filled"
+                pos_hint: {"center_x": .5, "center_y": .25}
+                theme_width: "Custom"
+                height: dp(40)
+                size_hint_x: 0.5
+                MDButtonText:
+                    text: "Login"
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    bold: True
+
+            # Register Button
+            MDButton:
+                size_hint: .66, .065
+                style: "elevated"
+                pos_hint: {"center_x": .5, "center_y": .15}
+                theme_width: "Custom"
+                height: dp(40)
+                size_hint_x: 0.5
+                MDButtonText:
+                    text: "Register"
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    bold: True
+                        
+
+
 

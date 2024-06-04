@@ -4,7 +4,8 @@ from kivy.uix.screenmanager import ScreenManager
 from kivy.factory import Factory
 from kivy.core.window import Window
 
-Window.size = (350, 580)
+
+Window.size = (450, 580)
 
 
 class Slope(MDApp):
